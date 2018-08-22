@@ -19,10 +19,10 @@
         </div>
         <div class="box-body">
             @include('admin.includes.alerts')
-            <form method="POST" action="{{ route('deposit.store') }}">
+            <form method="POST" action="{{ route('saque.store') }}">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Valor da retirada" name="retirada">
+                    <input type="text" class="form-control" placeholder="Valor da retirada" name="value">
                 </div>
 
                 <div class="form-group">

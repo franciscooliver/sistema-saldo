@@ -22,6 +22,12 @@
             <a class="btn btn-danger" href="{{ route('balance.sacar') }}">
                 <i class="fas fa-cart-arrow-down" aria-hidden="true"></i> Sacar</a>
             @endif
+
+            @if($amount > 0)
+                <a class="btn btn-info" href="{{ route('balance.transfer') }}">
+                    <i class="fas fa-exchange-alt"></i> Transferir</a>
+            @endif
+
         </div>
         <div class="box-body">
             @include('admin.includes.alerts')
